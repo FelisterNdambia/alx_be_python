@@ -1,5 +1,4 @@
 def display_menu():
-    # Corrected the print statement as required by the checker
     print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
@@ -15,8 +14,8 @@ def main():
         choice = input("Enter your choice: ")  # Prompt the user to choose an option
 
         if choice == '1':
-            # Add an item to the shopping list
-            item = input("Enter the name of the item to add: ")
+            # Prompt for and add an item (with the required exact input format)
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
             print(f"'{item}' has been added to your shopping list.")
         
